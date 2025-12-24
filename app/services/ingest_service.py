@@ -1,13 +1,12 @@
 import tempfile
 from pypdf import PdfReader
-from qdrant_client import QdrantClient
 from qdrant_client.http.models import VectorParams, Distance
+from app.core.qdrant_connection import qdrant
 
 from app.core.embeddings import embed_documents
 from app.utils.splitter import split_text
 
-# Connect to Qdrant (Docker)
-qdrant = QdrantClient(host="localhost", port=6333)
+
 
 COLLECTION_NAME = "edu_docs"
 
