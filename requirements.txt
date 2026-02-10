@@ -4,6 +4,5 @@ qdrant-client
 pypdf
 langchain
 langchain-community
-sentence-transformers
 google-genai
 python-dotenv
